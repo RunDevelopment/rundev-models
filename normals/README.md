@@ -8,8 +8,6 @@ This directory contains models for upscaling normal maps.
 
 ```
 Name: 4x-Normal-RG0-BC1
-License: CC BY 4.0
-Link: TODO
 Model Architecture: ESRGAN
 Scale: 4
 Purpose: A 4x upscaler for BC1-compressed normal maps with a zeroed-out B channel.
@@ -31,8 +29,6 @@ The LR have been compressed with various BC1 compression settings (dithering, we
 
 ```
 Name: 4x-Normal-RG0-uncompressed
-License: CC BY 4.0
-Link: TODO
 Model Architecture: ESRGAN
 Scale: 4
 Purpose: A 4x upscaler for uncompressed normal maps with a zeroed-out B channel.
