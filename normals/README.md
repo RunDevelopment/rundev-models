@@ -4,6 +4,8 @@ This directory contains models for upscaling normal maps.
 
 ## Models
 
+*Note:* This list also contains early versions (alpha versions) of the final models. I only included them for completeness, don't actually use those.
+
 ### 4x-Normal-RG0-BC1
 
 ```
