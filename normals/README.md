@@ -4,10 +4,10 @@ This directory contains models for upscaling normal maps.
 
 ## Models
 
-### 4x-Normal-RG0-BC1
+### 4x-Normal-RG0-BC1-alpha-320k
 
 ```
-Name: 4x-Normal-RG0-BC1
+Name: 4x-Normal-RG0-BC1-alpha-320k
 Model Architecture: ESRGAN
 Scale: 4
 Purpose: A 4x upscaler for BC1-compressed normal maps with a zeroed-out B channel.
@@ -25,10 +25,10 @@ Description: A 4x upscaler for BC1-compressed normal maps with a zeroed-out B ch
 The output normals will also have a constant-zero B channel. Use external software or image editing plugins to properly normalize the generated normals and generate the Z component (if necessary). Do no rely on this network producing unit vectors.
 The LR have been compressed with various BC1 compression settings (dithering, weighting) using Texconv version 2021.11.8.1. Since the contents of the B channel influence the R and G channels during compression, the LR were given a B channel that was either the Z component of the normal, a random constant color, or a random texture (usually the G channel of the associated albedo) before compression. The LR + B channel was then compressed and the resulting BC1-compressed DDS was converted back into a PNG and had its B channel zeroed out.
 
-### 4x-Normal-RG0-uncompressed
+### 4x-Normal-RG0-alpha-350k
 
 ```
-Name: 4x-Normal-RG0-uncompressed
+Name: 4x-Normal-RG0-alpha-350k
 Model Architecture: ESRGAN
 Scale: 4
 Purpose: A 4x upscaler for uncompressed normal maps with a zeroed-out B channel.
