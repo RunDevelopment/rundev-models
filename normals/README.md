@@ -6,6 +6,8 @@ This directory contains models for upscaling normal maps.
 
 ### 4x-Normal-RG0-BC1
 
+[Link](./4x-Normal-RG0-BC1.pth)
+
 ```
 Name: 4x-Normal-RG0-BC1
 Model Architecture: ESRGAN
@@ -26,6 +28,8 @@ The output normals will also have a constant-zero B channel. Use external softwa
 The LR have been compressed with various BC1 compression settings (dithering, weighting) using Texconv version 2021.11.8.1. Since the contents of the B channel influence the R and G channels during compression, the LR were given a B channel that was either the Z component of the normal, a random constant color, or a random texture (usually the G channel of the associated albedo) before compression. The LR + B channel was then compressed and the resulting BC1-compressed DDS was converted back into a PNG and had its B channel zeroed out.
 
 ### 4x-Normal-RG0-BC7
+
+[Link](./4x-Normal-RG0-BC7.pth)
 
 ```
 Name: 4xNormal-RG0-BC7
@@ -48,6 +52,8 @@ The output normals will also have a constant-zero B channel. Use external softwa
 The LR have been compressed using Texconv version 2021.11.8.1. Since the contents of the B channel influence the R and G channels during compression, the LR were given a B channel that was either the Z component of the normal, a random constant color, or a random texture (usually the G channel of the associated albedo) before compression. The LR + B channel was then compressed and the resulting BC7-compressed DDS was converted back into a PNG and had its B channel zeroed out.
 
 ### 4x-Normal-RG0
+
+[Link](./4x-Normal-RG0.pth)
 
 ```
 Name: 4x-Normal-RG0
@@ -78,6 +84,8 @@ This list contains early versions (alpha versions) of the final models. I only i
 
 ### 4x-Normal-RG0-BC1-alpha-320k
 
+[Link](./alpha/4x-Normal-RG0-BC1-alpha-320k.pth)
+
 ```
 Name: 4x-Normal-RG0-BC1-alpha-320k
 Model Architecture: ESRGAN
@@ -98,6 +106,8 @@ The output normals will also have a constant-zero B channel. Use external softwa
 The LR have been compressed with various BC1 compression settings (dithering, weighting) using Texconv version 2021.11.8.1. Since the contents of the B channel influence the R and G channels during compression, the LR were given a B channel that was either the Z component of the normal, a random constant color, or a random texture (usually the G channel of the associated albedo) before compression. The LR + B channel was then compressed and the resulting BC1-compressed DDS was converted back into a PNG and had its B channel zeroed out.
 
 ### 4x-Normal-RG0-alpha-350k
+
+[Link](./alpha/4x-Normal-RG0-alpha-350k.pth)
 
 ```
 Name: 4x-Normal-RG0-alpha-350k
