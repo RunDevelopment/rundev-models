@@ -6,6 +6,8 @@ This directory contains models for upscaling wood textures.
 
 ### 4x-Wood-BC1
 
+[Link](./4x-Wood-BC1.pth)
+
 ```
 Name: 4x-Wood-BC1
 Model Architecture: ESRGAN
