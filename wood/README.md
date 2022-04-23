@@ -34,3 +34,5 @@ The model in this directory were trained on wood textures from the following sou
 - https://freepbr.com/
 - https://ambientcg.com/
 - https://texture.ninja/
+
+The data was also augmented by randomly adjusting the hue and saturation of images.
