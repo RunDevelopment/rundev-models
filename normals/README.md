@@ -141,11 +141,12 @@ Depending on your application, you might need to reconstruct the Z component of 
 
 ```glsl
 vec3 normalize_rg0(vec2 rgInput) {
-	float zSq = 1.0 - dot(rgInput, rgInput);
+	float lenSq = dot(rgInput, rgInput);
+	float zSq = 1.0 - lenSq;
 	if (zSq >= 0.0) {
 		return vec3(rgInput, sqrt(zSq));
 	} else {
-		return vec3(rgInput / sqrt(zSq), 0.0);
+		return vec3(rgInput / sqrt(lenSq), 0.0);
 	}
 }
 ```
