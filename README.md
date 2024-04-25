@@ -1,3 +1,3 @@
-# ESRGAN models
+# Models
 
-This is a repository of all my ESRGAN models.
+This is a repository of all my AI models.
